@@ -14,7 +14,7 @@ iNSERT INTO student VALUES ( 2,"nizam","chennai",21,10.5);
 INSERT INTO student VALUES ( 3,"hidayath","bangalore",10,92);
 iNSERT INTO student VALUES ( 4,"imran","hyderabad",21,90);
 select id from student;
-select marks,max(marks) from student group by id>2;
+select city,count(name) from student group by city;
 
 
 
