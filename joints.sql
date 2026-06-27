@@ -58,3 +58,17 @@ select *
 from  student as s
 right join course as c
 on s.id=c.cid;
+
+#exclusive right join
+select * 
+from student
+right join course 
+on student.id=course.cid
+where student.id is null;
+
+#exclusive left join
+select * 
+from student
+left join course 
+on student.id=course.cid
+where course.cid is null;
