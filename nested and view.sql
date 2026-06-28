@@ -55,33 +55,12 @@ where city = "bang";
 select max(marks)
 from(select * from office where city = "bang")as temp;
 
-#view quries
-create database employee;
-use employee;
-create table office(
-id int,
-name varchar(50),
-marks int,
-city varchar(50)
-);
-
-insert into office 
-(id,name,marks,city)
-values
-(101,"sadikh",90,"bang"),
-(102,"nizam",78,"bang"),
-(103,"lathif",98,"chen"),
-(104,"imaran",10,"hyd"),
-(105,"boss",1,"shar");
-
-select * from office;
-select max(marks)
-from office
-where city = "bang";
 
 
 
-#view
+
+
+#view quaries
 create database employee;
 use employee;
 create table office(
